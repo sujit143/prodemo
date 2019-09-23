@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class DataService {
 
-  url: string = 'https://f615b77e.ngrok.io/api/Schedular/GetScheduleappointmentMatcingPatients?FirstName=abc';
+  url: string = 'https://54c99934.ngrok.io/api/Speciality/GetSpecialities';
 
   constructor(private http: HttpClient) { }
 

@@ -98,23 +98,23 @@ export class ErrorComponent implements OnInit {
       }
   }
 
-  onChange(args: ChangeEventArgs): void {
-    if (args.checked) {
-        this.scheduleObj.eventSettings.enableTooltip = true;
-    } else {
-        this.scheduleObj.eventSettings.enableTooltip = false;
-    }
-    this.scheduleObj.dataBind();
-}
+//   onChange(args: ChangeEventArgs): void {
+//     if (args.checked) {
+//         this.scheduleObj.eventSettings.enableTooltip = true;
+//     } else {
+//         this.scheduleObj.eventSettings.enableTooltip = false;
+//     }
+//     this.scheduleObj.dataBind();
+// }
 
-onTemplateChange(args: ChangeEventArgs): void {
-    if (args.checked) {
-        this.scheduleObj.eventSettings.tooltipTemplate = this.temp;
-    } else {
-        this.scheduleObj.eventSettings.tooltipTemplate = null;
-    }
-    this.scheduleObj.dataBind();
-}
+// onTemplateChange(args: ChangeEventArgs): void {
+//     if (args.checked) {
+//         this.scheduleObj.eventSettings.tooltipTemplate = this.temp;
+//     } else {
+//         this.scheduleObj.eventSettings.tooltipTemplate = null;
+//     }
+//     this.scheduleObj.dataBind();
+// }
 
   constructor(private _data: DateService) { }
 

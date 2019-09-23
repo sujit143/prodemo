@@ -20,7 +20,20 @@ import { CheckBoxAllModule } from '@syncfusion/ej2-angular-buttons';
 import { ErrorComponent } from './error/error.component';
 
 import { MatTabsModule } from "@angular/material/tabs";
-import { MatToolbarModule } from "@angular/material";
+import { MatToolbarModule, MatTableModule } from "@angular/material";
+// import { ToastComponent } from './toast/toast.component';
+import { ToastModule } from '@syncfusion/ej2-angular-notifications';
+import { ReactiveComponent } from './reactive/reactive.component';
+import { GridAllModule } from '@syncfusion/ej2-angular-grids';
+import { ToolbarModule } from '@syncfusion/ej2-angular-navigations';
+import { DialogModule } from '@syncfusion/ej2-angular-popups';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import { PaginatorComponent } from './paginator/paginator.component';
+
 
 
 @NgModule({
@@ -28,7 +41,10 @@ import { MatToolbarModule } from "@angular/material";
     AppComponent,
     DatatableComponent,
     SchedularComponent,
-    ErrorComponent
+    ErrorComponent,
+    // ToastComponent,
+    ReactiveComponent,
+    PaginatorComponent
 
   ],
   imports: [
@@ -53,7 +69,20 @@ import { MatToolbarModule } from "@angular/material";
     ButtonAllModule,
     CheckBoxAllModule,
     MatTabsModule,
-        MatToolbarModule
+        MatToolbarModule,
+        ToastModule,
+        GridAllModule,
+        ToolbarModule,
+        DialogModule,
+        FormsModule,
+        ReactiveFormsModule,
+        HttpModule,
+        RouterModule,
+        CommonModule,
+        MatPaginatorModule,
+        MatTableModule
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
