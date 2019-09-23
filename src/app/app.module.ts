@@ -19,8 +19,8 @@ import { ButtonAllModule  } from '@syncfusion/ej2-angular-buttons';
 import { CheckBoxAllModule } from '@syncfusion/ej2-angular-buttons';
 import { ErrorComponent } from './error/error.component';
 
-import { MatTabsModule } from "@angular/material/tabs";
-import { MatToolbarModule, MatTableModule } from "@angular/material";
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatToolbarModule, MatTableModule } from '@angular/material';
 // import { ToastComponent } from './toast/toast.component';
 import { ToastModule } from '@syncfusion/ej2-angular-notifications';
 import { ReactiveComponent } from './reactive/reactive.component';
@@ -33,6 +33,10 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { PaginatorComponent } from './paginator/paginator.component';
+import { UserdisplayComponent } from './userdisplay/userdisplay.component';
+import { MatSortModule } from '@angular/material/sort';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material';
 
 
 
@@ -44,7 +48,8 @@ import { PaginatorComponent } from './paginator/paginator.component';
     ErrorComponent,
     // ToastComponent,
     ReactiveComponent,
-    PaginatorComponent
+    PaginatorComponent,
+    UserdisplayComponent
 
   ],
   imports: [
@@ -80,7 +85,10 @@ import { PaginatorComponent } from './paginator/paginator.component';
         RouterModule,
         CommonModule,
         MatPaginatorModule,
-        MatTableModule
+        MatTableModule,
+        MatSortModule,
+        MatFormFieldModule,
+        MatInputModule
 
 
   ],
